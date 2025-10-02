@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Lyric Generator</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="lyric-generator-form">
           <input
             type="text"
             placeholder="Enter the genre on your lyrics"
@@ -23,11 +24,7 @@
             class="instructions" />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="lyrics">
-          I have nothing if I don't have you
-          <br />
-          You're everything to me / The air that I breathe / My sight so I see
-        </div>
+        <div class="lyrics" id="lyrics"></div>
       </main>
       <script src="src/index.js"></script>
       <footer>

@@ -20,9 +20,6 @@ function generateLyrics(event) {
   lyricsElement.classList.remove("hidden");
   lyricsElement.innerHTML = `<div class="generating">Generating your lyrics for you about ${instructionsInput.value}</div>`;
 
-  console.log("Generating lyrics");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayLyrics);
 }

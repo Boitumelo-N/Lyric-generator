@@ -15,18 +15,23 @@
       </header>
 
       <main>
-        <form id="lyric-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the genre and topic"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions" />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="lyrics" id="lyrics"></div>
+        <div class="form-container">
+          <form id="lyric-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the genre and topic"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions" />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            i.e Rhythm and Blues Love Song or Soul Sad Song
+          </div>
+        </div>
+        <div class="lyrics hidden" id="lyrics"></div>
       </main>
       <script src="src/index.js"></script>
       <footer>

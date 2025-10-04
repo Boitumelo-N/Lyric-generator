@@ -16,6 +16,10 @@ function generateLyrics(event) {
   let prompt = `Generate lyrics about ${instructionsInput.value}. Your mission is to generate a verse and chorus for a song. Create a title, verse 1 and chorus headings and seperate each line with a <br />. In HTML format but don't state that its in HTML for the user`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let lyricsElement = document.querySelector("#lyrics");
+  lyricsElement.classList.remove("hidden");
+  lyricsElement.innerHTML = `<div class="generating">Generating your lyrics for you about ${instructionsInput.value}</div>`;
+
   console.log("Generating lyrics");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
